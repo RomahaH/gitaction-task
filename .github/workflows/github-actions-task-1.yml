@@ -1,0 +1,15 @@
+name: GitHub Actions Task 1
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show last and first name
+        run: echo Hello, Khymytsia Roman!
