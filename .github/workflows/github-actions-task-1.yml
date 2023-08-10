@@ -11,5 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: Show last and first name
         run: echo Hello, Khymytsia Roman!
